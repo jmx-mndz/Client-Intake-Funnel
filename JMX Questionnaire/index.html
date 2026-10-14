@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Start your project | JMX</title>
+  <meta name="description" content="Tell JMX about your business and what you need. We build websites and funnels from scratch.">
+  <link rel="icon" href="assets/jmx-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Michroma&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="shell">
+
+    <aside class="rail" aria-label="Progress">
+      <a class="brand" href="https://jmxnext.com" aria-label="JMX home">
+        <img src="assets/jmx-logo.png" alt="JMX: Build what's next">
+      </a>
+      <ol class="steps" id="stepList"></ol>
+      <p class="rail-foot">jmxnext.com</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <a href="https://jmxnext.com" class="topbar-brand"><img src="assets/jmx-logo.png" alt="JMX"></a>
+        <span class="topbar-count" id="topCount"></span>
+      </header>
+
+      <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="bar">
+        <div class="bar-fill" id="barFill"></div>
+      </div>
+
+      <form id="form" novalidate autocomplete="on">
+        <div id="stage" aria-live="polite"></div>
+        <!-- Honeypot: real people never see or fill this -->
+        <input type="text" name="company_website" id="hp" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp">
+        <div class="nav" id="nav">
+          <button type="button" class="btn ghost" id="backBtn">Back</button>
+          <button type="button" class="btn primary" id="nextBtn">Continue</button>
+        </div>
+      </form>
+    </main>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
